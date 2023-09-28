@@ -1,0 +1,168 @@
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+ }
+ .search-box> form> button{
+   padding: 1px;
+ }
+ .search-box> form> button> img{
+   width: 40px;
+   height: 36px;
+   padding: 0%;
+ }
+ .search-box > :nth-child(3) {
+   width: 40px;
+   height: 35px;
+ }
+ .search-box > :nth-child(4) {
+   width: 40px;
+   height: 35px;
+ }
+ .search-box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 1px;
+ }
+ 
+ .search-box form input[type="text"] {
+    border: none;
+    padding: 10px;
+    width: 400px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+ }
+ 
+ .search-box form button[type="submit"] {
+    background-color: #ff9900;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+ }
+ 
+ .search-box form button[type="submit"]:hover {
+    background-color: #ffac33;
+ }
+ .n-button3 > :nth-child(1) {
+   width: 40px;
+   height: 35px;
+ }
+ .n-button4 > :nth-child(1) {
+   width: 40px;
+   height: 35px;
+ }
+
+.n-button3{
+   background:transparent ;
+   cursor: pointer;
+   border: none;
+}
+.n-button4{
+   background:transparent ;
+   cursor: pointer;
+   border: none;
+}
+
+
+
+
+
+
+
+
+
+.n-wrapper {
+    /* background-color: rgb(40, 38, 38); */
+    background-color: #020a13;
+    /*  background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg');
+     */
+     position:sticky;
+     z-index: 2;
+     border-radius: 0px;
+     width: 100%;
+     height: 70px;
+     display: flex;
+     justify-content:space-evenly;
+     top: 0;
+   }
+   .n-left {
+     padding-left: 1rem;
+     flex: 1;
+     align-items: center;
+     justify-content: left;
+     display: flex;
+   }
+   .dropdown-content {
+     display: none;
+     font-size: 1.2rem;
+     position: absolute;
+     background-color: #f9f9f9;
+     min-width: 160px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 2;
+   }
+   .dropdown a {
+     color: rgb(255, 255, 255);
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+   }
+   .dropdown-content a {
+     color: black;
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+     text-align: left;
+   }
+   .dropdown-content a:hover {background-color: #f1f1f1;}
+   .dropdown:hover .dropdown-content {
+     display: block;
+   }
+   
+   .n-name > button{
+     background: transparent;
+     border: none;
+     font-size: 1.5rem;
+     color: var(--orange);
+     font-weight: 400;
+     /* text-decoration: double; */
+     cursor: pointer;
+   }
+   .n-right {
+     flex: 1;
+     display: flex;
+     font-size: 1.2rem;
+     padding-right: 1rem;
+     align-items: center;
+     justify-content: flex-end;
+     font-weight: 380;
+   }
+   .n-list {
+     padding-left: 2rem;
+     flex: 3;
+     width: 5rem;
+     font-size: 1.3rem;
+     font-weight: bold;
+   }
+   .n-list > ul {
+     display: flex;
+   }
+   .n-list > ul :hover {
+     color: var(--orange);
+     cursor: pointer;
+   }
+   .n-button {
+     flex: 2;
+   }
+   .n-button2{
+     flex: 2;
+     margin-left:1rem ;
+   }
