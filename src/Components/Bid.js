@@ -101,6 +101,7 @@ export default class Bid extends Component {
       .then((res) => {
         console.log(res.status);
         console.log(res)
+        console.log("Ho gyi bid")
       });
   };
 

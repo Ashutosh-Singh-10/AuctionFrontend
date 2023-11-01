@@ -35,9 +35,9 @@ export default class Bid2 extends Component {
       myBid:0,
       minBid:-55,
       img:"",
-      // url:"localhost",
+      url:"localhost",
       // url:"192.168.159.92",
-      url:"192.168.141.92",
+      // url:"192.168.141.92",
       
       prevBid: [
         // ["Ashutosh", 1922],
@@ -151,8 +151,10 @@ export default class Bid2 extends Component {
 
 <div className='AuctionRoom'>
     <div className="gap50"></div>
-        <div className='bannerup'>
-            <img src={Banner2} alt='...?'/>
+        <div className='bannerup myFlex'>
+            <img src={Banner2} alt='...?' 
+            style={{width:"100%",objectFit:"contain",backgroundColor:"#41aaf7",borderRadius:"20px"}}
+            />
         </div>
 
         <div className='Container5 '>
@@ -170,14 +172,18 @@ export default class Bid2 extends Component {
             </div>
 
 
-        <div className='auctiondetail'>
-            <div className='IMGbox'>
+        <div className='auctiondetail' 
+        
+        >
+            <div className='IMGbox'
+            // style={{paddingBottom:"900px"}}
+            >
              
                 <img 
                         src={"http://"+this.state.url+":8000"+this.state.img}
                 alt='..?'/>
                 <p style={{color:"red"}}>Disclaimer* Bidding is closing soon</p>
-                <div className='Biddingprocess'>
+                <div className='Biddingprocess' style={{borderRadius:"5px"}}>
                   
                     <h1>Asking Bid</h1>
                     <h3>₹ {this.state.myBid}  </h3>
@@ -187,9 +193,14 @@ export default class Bid2 extends Component {
                     </div>
                     
                 </div>
-                <p><span style={{color:"red"}}>Important: </span>Clicking on 'Bid' Button is commitment to buy and is legally binding in accordance with Indian Law.</p>
+                <p><span 
+                // style={{color:"red"}} 
+                style={{marginBottom:"2000px",color:"red"}}
+                 >Important: </span>Clicking on 'Bid' Button is commitment to buy and is legally binding in accordance with Indian Law.</p>
             </div>
-            <div className='Detailbox'>
+            <div className='Detailbox'
+            style={{paddingBottom:"200px"}}
+            >
                 <div className="productdetail">
                     <h1>{this.state.productName}</h1>
                     <p>{this.state.productDetail}</p>
@@ -200,7 +211,9 @@ export default class Bid2 extends Component {
                     {this.state.prevBid.map((element) => {
                       return (
                     <div className='person'>
-                        <img src='https://www.citypng.com/public/uploads/preview/hd-man-user-illustration-icon-transparent-png-11640168385tqosatnrny.png?v=2023050603' alt='..?'/>
+                        <img src='https://www.citypng.com/public/uploads/preview/hd-man-user-illustration-icon-transparent-png-11640168385tqosatnrny.png?v=2023050603' alt='..?'
+                        style={{height:"100%",width:"auto",borderRadius:"100%"}}
+                        />
                         <p>{element[0]}</p>
                         <p>{element[1]}</p>
                     </div>

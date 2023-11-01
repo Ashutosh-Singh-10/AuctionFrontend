@@ -5,7 +5,7 @@ export default class Foot extends Component {
   render() {
     return (<>
 
-<footer className="footer-distributed" style={{backgroundColor:"#020a13"}}>
+<footer className="footer-distributed" style={{backgroundColor:"#020a13"}}  id="footid">
 
 			<div className="footer-left">
 

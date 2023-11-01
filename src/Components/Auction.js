@@ -27,9 +27,9 @@ export default class Auction extends Component {
             bidDiff:"",
             email:this.getCookie("email"),
             password:this.getCookie("password"),
-            // url:"localhost",
+            url:"localhost",
             // url:"192.168.159.92",
-            url:"192.168.141.92"
+            // url:"192.168.141.92"
             
         }
         console.log(this.state);

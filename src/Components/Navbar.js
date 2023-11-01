@@ -80,14 +80,17 @@ logout=()=>{
             </li>
   
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link active" aria-current="page" to="#footid">
                 Contact us
-              </a>
+              </Link>
             </li>
   
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
-                <button onClick={this.logout}>Logout</button>
+              <a className="nav-link active" aria-current="page" href="#" style={{height:"400px"}}>
+                <button onClick={this.logout}
+
+                style={{margin:"5px"}}
+                >Logout</button>
               </a>
             </li>
   

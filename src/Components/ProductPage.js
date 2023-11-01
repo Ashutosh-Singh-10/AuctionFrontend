@@ -14,9 +14,9 @@ export default class ProductPage extends Component {
     this.state={
       items:[],
       page:1,
-      // url:"localhost",
+      url:"localhost",
       // url:"192.168.159.92",
-      url:"192.168.141.92",
+      // url:"192.168.141.92",
     }
    
 }
@@ -75,7 +75,9 @@ fetchData=()=>{
      
                     <div className="w100 h70 ">
                       <Link to={`/bid/${item.productId}`} >
-                        <img src={"http://"+this.state.url+":8000"+item.img} alt=""  className='w100 h100'/>
+                        <img src={"http://"+this.state.url+":8000"+item.img} alt=""  className='w100 ' style={{
+                          aspectRatio:"1/1", height:"auto",objectFit:"contain",background:"black"
+                        }}/>
                         </Link>
                     </div>
                     <div className="w100 h30 ">

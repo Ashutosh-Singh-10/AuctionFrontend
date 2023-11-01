@@ -13,9 +13,9 @@ export default class Signup extends Component {
             password:"",
             otp:"",
             screen:0,
-            // url:"localhost",
+            url:"localhost",
             // url:"192.168.159.92"
-            url:"192.168.141.92",
+            // url:"192.168.141.92",
 
         }
     }
